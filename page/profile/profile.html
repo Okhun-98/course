@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="./profile.css" />
+</head>
+
+<body>
+    <div class="box">
+        <div class="navbar">
+            <img class="menu" src="../../img/menu.png" onclick="openMenu()" />
+            <h1 class="title">MY PROFILE</h1>
+            <div class="links">
+                <a class="link" href="https://www.google.com" target="_blank">Improve Profile</a>
+                <a class="link" href="https://www.google.com" target="_blank">My Services</a>
+                <a class="link" href="https://www.google.com" target="_blank">Get Certified</a>
+                <a class="link" href="https://www.google.com" target="_blank">Promote Profile</a>
+                <a onclick="logOut()" class="link" href="../auth/login.html">Log out</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="profil">
+                <button class="btn-edit">Edit</button>
+                <div class="data">
+                    <img class="avatar" src="../../img/avatar.png" />
+                    <label class="edit-img"><input onchange="uploadImage(event)" style="display: none"
+                            type="file" />Edit</label>
+                    <ul class="location">
+                        <li class="name hidden block-md text-center-md"></li>
+                        <li class="email hidden block-md text-center-md"></li>
+                        <li class="loc-title green text-center-md">I'm Online!</li>
+                        <li class="loc-title text-center-md">Wrszawa, poland</li>
+                        <li class="loc-title date text-center-md"></li>
+                        <li class="loc-title text-center-md  date-created"></li>
+                    </ul>
+                </div>
+                <div class="last-data">
+                    <h1 class="name hidden-md block"></h1>
+                    <span class="email hidden-md block"></span>
+                    <span class="status">Javascript TypeScript Angular React NodeJs NestJs</span>
+                    <p class="description">
+                        Sends the task to the computer's file system. Waits while the file system opens and reads the
+                        file.
+                        Returns the content to the client. Ready to handle the next request.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./profile.js"></script>
+
+</html>

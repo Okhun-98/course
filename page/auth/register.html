@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="./register.css" />
+</head>
+
+<body>
+    <div class="box">
+        <form class="form" onsubmit="register(event)">
+            <p class="error"></p>
+            <h1>Register</h1>
+            <input oninput="changeValue(event)" name="username" required type="email" placeholder="User Name">
+            <input oninput="changeValue(event)" name="name" required type="text" placeholder="Name">
+            <input oninput="changeValue(event)" name="password" required type="password" placeholder="Password">
+            <button class="btn" type="submit">Register</button>
+            <div class="box-link">
+                <a class="link" href="./login.html">Go to login</a>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="./register.js"></script>
+
+</html>
