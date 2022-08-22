@@ -8,7 +8,7 @@ const avatar = document.getElementsByClassName("avatar")[0];
 let isImage = ''
 
 if (!access_token) {
-    window.location.href = "../auth/login.html";
+    window.location.href = "./page/auth/login.html";
 }
 
 function logOut() {

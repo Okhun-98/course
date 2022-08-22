@@ -6,27 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="./profile.css" />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
 </head>
 
 <body>
     <div class="box">
         <div class="navbar">
-            <img class="menu" src="../../img/menu.png" onclick="openMenu()" />
+            <img class="menu" src="./img/menu.png" onclick="openMenu()" />
             <h1 class="title">MY PROFILE</h1>
             <div class="links">
                 <a class="link" href="https://www.google.com" target="_blank">Improve Profile</a>
                 <a class="link" href="https://www.google.com" target="_blank">My Services</a>
                 <a class="link" href="https://www.google.com" target="_blank">Get Certified</a>
                 <a class="link" href="https://www.google.com" target="_blank">Promote Profile</a>
-                <a onclick="logOut()" class="link" href="../auth/login.html">Log out</a>
+                <a onclick="logOut()" class="link" href="./page/auth/login.html">Log out</a>
             </div>
         </div>
         <div class="container">
             <div class="profil">
                 <button class="btn-edit">Edit</button>
                 <div class="data">
-                    <img class="avatar" src="../../img/avatar.png" />
+                    <img class="avatar" src="./img/avatar.png" />
                     <label class="edit-img"><input onchange="uploadImage(event)" style="display: none"
                             type="file" />Edit</label>
                     <ul class="location">
@@ -52,6 +52,6 @@
         </div>
     </div>
 </body>
-<script src="./profile.js"></script>
+<script src="./index.js"></script>
 
 </html>
